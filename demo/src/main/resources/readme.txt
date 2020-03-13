@@ -3,9 +3,9 @@ https://dzone.com/articles/running-apache-kafka-on-windows-os
 testing kafka 
 
 need zookeeper running first then kafka - both folders in root of C:
-N.B. ZooKeeper is really just for distributed systems but in this example only 1
+N.B. ZooKeeper is really just for distributed systems but in this example only 1 (run with cmd zkserver)
 
-need this command for the consumer
+need this command for the consumer (in /bin/windows)
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test
 rather than in tutorial as didnt work (got this from comments)
 
@@ -14,7 +14,9 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic test
 
 which then has a command prompt - enter anything there and it appears in the consumer console
 
-The above is just about running kafka on pc rather than through this app! 
+*********************************************************************************
+*** The above is just about running kafka on pc rather than through this app! ***
+*********************************************************************************
 
 However I think I need it running for this app to use too...(like apacheMQ)
 https://www.tutorialspoint.com/spring_boot/spring_boot_apache_kafka.htm
